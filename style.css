@@ -67,9 +67,9 @@ img {
   color: #ec5242;
   font-weight: 800;
   margin-bottom: 50px;
-  /* background: -webkit-linear-gradient(rgb(212, 41, 41), #ec5242);
+  background: linear-gradient(rgb(212, 41, 41), #ec5242);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  -webkit-text-fill-color: transparent;
 }
 
 .front-section .date {
@@ -91,7 +91,6 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* background-image: url(images/background-image-gray-stone-wall-with-ray-light-passing-through-it_198885-263.jpg); */
 }
 
 .main-program ul {
@@ -104,7 +103,6 @@ img {
 .main-program .programs {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
-  /* grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); */
   place-items: center;
   justify-content: center;
   column-gap: 10px;
@@ -128,7 +126,6 @@ img {
 
 .programs h4 {
   color: #ec5242;
-  /* font-size: 15px; */
   font-weight: 900;
 }
 
@@ -197,14 +194,14 @@ hr {
 
 .summit-img {
   background-color: #972a16;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to right,
       rgba(151, 42, 22, 0.6),
       rgba(151, 42, 22, 0.6)
     ),
     url(images/meeting-1.jpg);
   background-repeat: no-repeat;
-  /* background-size: 56vh 45vw; */
   background-size: 100% 100%;
   height: 30vh;
   width: 86%;
@@ -217,7 +214,8 @@ hr {
 }
 
 .summit-img1 {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to right,
       rgba(151, 42, 22, 0.6),
       rgba(151, 42, 22, 0.6)
@@ -265,11 +263,78 @@ footer {
   padding: 4% 4%;
 }
 
+.menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(151, 42, 22, 0.6);
+  backdrop-filter: blur(7px);
+  height: 100vh;
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top center;
+}
+
+@keyframes growDown {
+  0% {
+    transform: rotateX(-90deg);
+  }
+
+  70% {
+    transform: rotateX(20deg);
+  }
+
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+.menu .xicon {
+  height: 20px;
+  width: 20px;
+  margin-left: 86%;
+  margin-top: 7.5%;
+}
+
+.menu.visible {
+  display: block;
+}
+
+.menu .menu-li {
+  list-style-type: none;
+  margin-top: 13%;
+}
+
+.menu .menu-li a {
+  text-decoration: none;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.menu .menu-li a:hover {
+  font-weight: bolder;
+}
+
+.menu .nav-link {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
 .footer-rights {
   font-size: 12px;
 }
 
 @media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+
   .header {
     display: block;
   }
@@ -329,7 +394,7 @@ footer {
     border: 3px solid #ec5242;
   }
 
-  .top-padding {
+  .top-padding1 {
     padding-left: 10%;
     padding-right: 30%;
   }
@@ -375,10 +440,35 @@ footer {
 
   .hr-about {
     width: 2%;
-    margin-bottom: 35px;
   }
 
   footer {
     padding: 4% 10%;
+  }
+
+  .abt-pad {
+    padding: 4% 18%;
+  }
+
+  .abt-h2-none {
+    display: none;
+  }
+
+  .summit-pic {
+    width: 58%;
+  }
+
+  .prev-look {
+    margin-bottom: 50px;
+  }
+
+  .summit-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-dk {
+    background-color: #272a31;
+    color: white;
   }
 }
