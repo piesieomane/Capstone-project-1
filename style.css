@@ -117,7 +117,7 @@ img {
   width: 60%;
   background-color: #ec5242;
   height: 20%;
-  padding: 20px 30px;
+  padding: 20px 1px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -300,6 +300,7 @@ footer {
 
 .menu.visible {
   display: block;
+  z-index: 20;
 }
 
 .menu .menu-li {
