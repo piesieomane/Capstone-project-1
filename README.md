@@ -45,7 +45,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Thanks to Microverse to help get to this milestone
+- Thanks to Microverse to help get to this milestone and @cindy shin for the design
 
 ## 📝 License
 
