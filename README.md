@@ -23,7 +23,7 @@ To clone checkout this documentation on github (https://docs.github.com/en/repos
 
 ### Live Demo
 
-[My-Portfolio-Page](https://piesieomane.github.io/My-portfolio/)
+[My-Capstone-project](https://piesieomane.github.io/Capstone-project-1/)
 
 ## Authors
 
